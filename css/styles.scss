@@ -3,3 +3,8 @@ $primary : rgb(0, 255, 42);
 * {
     background-color: $primary;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
