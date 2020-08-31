@@ -22,7 +22,7 @@ function styles(){
 
 function js() {
     return(
-        gulp.src("[js/*.js]", "!js/*min.js")
+        gulp.src(["js/*.js", "!js/*min.js"])
         .pipe(terser())
         .pipe(rename({
             suffix:".min"
