@@ -1,1 +1,3 @@
-let a=22,b=11,c=a+b;
+let a = 22;
+let b = 11;
+let c = a+b;

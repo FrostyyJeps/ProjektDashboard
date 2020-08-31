@@ -1,11 +1,11 @@
-const gulp = require("gulp")
-const sass = require("gulp-sass")
-const sourcemaps = require("gulp-sourcemaps")
-const postcss = require("gulp-postcss")
-const autoprefixer = require("autoprefixer")
-const cssnano = require("cssnano")
-const terser = require("gulp-terser")
-const rename = require("gulp-rename")
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const sourcemaps = require("gulp-sourcemaps");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+const terser = require("gulp-terser");
+const rename = require("gulp-rename");
 
 function styles(){
 
@@ -21,17 +21,15 @@ function styles(){
 }
 
 function js() {
-
     return(
-        gulp.src("js/*.js")
-            .pipe(terser())
-            .pipe(rename({
-                suffix:".min"
-            })
-            .pipe(gulp.dest("js"))
-    )
-
-)};
+        gulp.src("[js/*.js]", "!js/*min.js")
+        .pipe(terser())
+        .pipe(rename({
+            suffix:".min"
+        }))
+        .pipe(gulp.dest("js"))
+    );
+}
 
 function watch(){
 
