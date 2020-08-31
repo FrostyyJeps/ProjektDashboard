@@ -10,7 +10,7 @@ function styles(){
         gulp.src("css/*.scss")
             .pipe(sourcemaps.init())
             .pipe(sass())
-            .pipe(postcss([autoprefixer()]))
+            .pipe(postcss([autoprefixer({grid:true})]))
             .pipe(sourcemaps.write("."))
             .pipe(gulp.dest("css"))
     );
