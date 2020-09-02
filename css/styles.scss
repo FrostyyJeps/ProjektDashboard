@@ -1,3 +1,39 @@
+$spacers:(
+    0:0,
+    1:0.25,
+    2:0.5,
+    3:1,
+    4:1.5,
+    5:3,
+);
+
+$sides:(
+    '':'',
+    't':'-top',
+    'r':'-right',
+    'b':'-bottom',
+    'l':'-left',
+);
+
+
+@each $sideClass, $sideName in $sides{
+
+    @each $count, $value in $spacers {
+        .m#{$sideClass}-#{$count}{
+            margin#{$sideName}: #{$value}vh;
+        }
+        .p#{$sideClass}-#{$count}{
+            padding#{$sideName}: #{$value}vh;
+        }
+    }
+    
+}
+
+
+
+
+
+
 *{ 
     box-sizing: border-box; 
 }
