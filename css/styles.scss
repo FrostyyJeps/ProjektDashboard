@@ -26,6 +26,9 @@ $sides:(
             padding#{$sideName}: #{$value}vh;
         }
     }
+    .m#{$sideClass}-auto{
+        margin#{$sideName}: auto;
+    }
     
 }
 
