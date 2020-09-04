@@ -87,9 +87,29 @@ img {
     color: white;
     text-align: center;
     font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.stonkArrow i {
-    position: absolute;
-    top: 10%;
+.stonkArrow {
+    font-size: 35px;
+    color: white;
+    margin-right: 5px;
+}
+
+.flip {
+    rotate: 180deg;
+}
+
+.stonkButton {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 190%;
+    border-radius: 20px;
+    background: $darkBlue;
+    width: 195px;
+    height: 31px;
+    margin: auto;
 }
