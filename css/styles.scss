@@ -133,6 +133,17 @@ img {
     .product2, .product3 {
         display: none;
     }
+
+    .product1 img {
+        margin: auto;
+        display: block;
+    }
+
+    .product1 i {
+        color: $darkBlue;
+        font-size: 25px;
+        position: absolute;
+    }
 }
 
 
