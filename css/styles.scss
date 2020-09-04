@@ -127,7 +127,6 @@ img {
         height: 175px;
         background: $lighterBlue;
         margin: 22px;
-        justify-content: center;
     }
 
     .product2, .product3 {
@@ -135,20 +134,39 @@ img {
     }
 
     .product1 img {
-        margin: auto;
-        display: block;
+        margin: 5vh auto;
     }
 
-    .product1 i {
-        color: $darkBlue;
-        font-size: 25px;
-        position: absolute;
+    h2 {
+        @include centerWhiteText();
+        font-weight: 300;
+        font-size: 20px;
     }
 }
 
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+    .overviewBG {
+        background: $lighterBlue;
+        height: 570px;
+        width: 311px;
+        margin: auto;
+    }
 
-.topProducts h2 {
-    @include centerWhiteText();
-    font-weight: 300;
-    font-size: 20px;
+    h2 {
+        @include centerWhiteText();
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+
+    img {
+        max-width: 80%;
+        margin: 50px auto;
+    }
 }
